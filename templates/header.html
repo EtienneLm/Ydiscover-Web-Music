@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/header.css">
+    <link rel="stylesheet" href="../static/page.css">
+    <link rel="shortcut icon" href="../static/Top-Logo.png" type="image/x-icon" class="bright-image">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>WebMusYc</title>
+</head>
+<body>
+    <!-- barre header -->
+    <header>
+        <section class="header">
+            <nav>
+                <div class="onglet">
+                    <a href="/home" class="container_logo">
+                        <img src="../static/logo_Webmusyc.png" alt="logo" class="logo">
+                    </a>
+                        <div class="suggestion">
+                            <a  href="blind_test.html"> Blindtest</a>
+                            <a  href="music.html">Music</a>
+                        </div>
+                </div>
+                    <div class="buttons">
+                        <button class="login">Log In</button>
+                        <button class="register">Sign Up</button>
+                    </div>
+                <div class="barre">
+                </div>
+            </nav>
+        </section>
+    </header>
+
+    {% block contenu %}
+    {% endblock contenu %}
+
+</body>
+</html>
