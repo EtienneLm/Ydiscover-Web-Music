@@ -9,6 +9,7 @@
     --back: #232323;
     --light: #B8B8B8;
     --musyc: #22C29A;
+    --musyc2: #B453DE;
     --padd: 10px 20px;
     --radius:10px;
 }
@@ -19,6 +20,80 @@ body {
     color: white;
     padding: 20px;
 }
+
+/* debut header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--grey);
+    border-radius: var(--radius);
+    padding: var(--padd);  
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+nav a:hover {
+    color: var(--musyc);
+}
+
+.user-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-options a {
+    gap: 10px;
+}
+
+.logo img {
+    max-height: 130px;
+    max-width: 130px;
+}
+
+.login {
+    border: white 1px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.signup{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: white 1px solid;
+}
+
+.signup a {
+    color: white;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.login:hover, .signup:hover {
+    background-color: var(--musyc2);
+    transform: scale(1.1);
+}
+
+/* fin header */
+
 
 .view {
     display: flex;
