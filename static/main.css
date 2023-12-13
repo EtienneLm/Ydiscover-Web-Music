@@ -64,31 +64,25 @@ nav a:hover {
     max-width: 130px;
 }
 
-.login {
+.login a {
     border: white 1px solid;
     padding: 10px 20px;
     border-radius: 5px;
-}
-
-.login a {
     color: white;
     text-decoration: none;
     transition: .2s ease;
-}
-
-.signup{
-    padding: 10px 20px;
-    border-radius: 5px;
-    border: white 1px solid;
 }
 
 .signup a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: white 1px solid;
     color: white;
     text-decoration: none;
     transition: .2s ease;
 }
 
-.login:hover, .signup:hover {
+.login a:hover, .signup a:hover {
     background-color: var(--musyc2);
     transform: scale(1.1);
 }
