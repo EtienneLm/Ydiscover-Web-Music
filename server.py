@@ -14,6 +14,10 @@ def home():
 def blindTestPage():
     return render_template('blindTest.html')
 
+@app.route('/connected')
+def connectedPage():
+    return render_template('connected.html')
+
 # @app.route('/test')
 # def hello():
 #     return render_template('test.html')
