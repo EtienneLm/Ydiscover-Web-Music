@@ -327,11 +327,14 @@ button {
     margin: 34%;
 }
 
-.connectClass {
+.connectClass, .createClass{
     display: flex;
     align-items: center;
     justify-content: center; 
     margin-top: 8%;
+}
+ 
+    
 .creation {
     display: flex;
     align-items: center;
