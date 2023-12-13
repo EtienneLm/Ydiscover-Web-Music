@@ -1,19 +1,18 @@
 {% extends 'header.html' %}
 {% block contenu %}
 
-<!-- fin header -->
-    <main>
+<main>
     <div class="view">
         <div class="side">
             <div class="menu">
                 <div class="text-box mBot15">
-                    <a href="home.html">
+                    <a href="/home">
                         <span class="material-icons">home</span>
                         <span class="text-m">Home</span>
                     </a>
                 </div>
                 <div class="text-box">
-                    <a href="search.html">
+                    <a href="/search">
                         <span class="material-icons">search</span>
                         <span class="text-m">Search</span>
                     </a>
@@ -41,106 +40,13 @@
                 </div>
                 <div class="playlists">
                     <div>
-                        <div class="playlist">
+                        <div class="creation">
                             <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="material-icons">push_pin</span>
-                                    <span class="artist">Playlist</span>
+                                <div  class="text-box mBot15">
+                                    <p>Log in to create your first playlist!</p>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="playlist">
-                            <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="artist">Playlist</span>
-                                </div>
-                            </div>
-                        </div><div class="playlist">
-                            <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="artist">Playlist</span>
-                                </div>
-                            </div>
-                        </div><div class="playlist">
-                            <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="artist">Playlist</span>
-                                </div>
-                            </div>
-                        </div><div class="playlist">
-                            <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="artist">Playlist</span>
-                                </div>
-                            </div>
-                        </div><div class="playlist">
-                            <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="artist">Playlist</span>
-                                </div>
-                            </div>
-                        </div><div class="playlist">
-                            <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="artist">Playlist</span>
-                                </div>
-                            </div>
-                        </div><div class="playlist">
-                            <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="artist">Playlist</span>
-                                </div>
-                            </div>
-                        </div><div class="playlist">
-                            <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="artist">Playlist</span>
-                                </div>
-                            </div>
-                        </div><div class="playlist">
-                            <div>
-                                <img src="../static/templates/liked.png" alt="">
-                            </div>
-                            <div class="playlist-meta">
-                                <a href="/">Liked Songs</a>
-                                <div>
-                                    <span class="artist">Playlist</span>
+                                <div class="create-playlist">
+                                    <a href="login.html">Create playlist</a>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +73,8 @@
                     <span class="text-m">©Web Mus Yc</span>
                 </div> 
             </div>
-
-    <!-- fin header -->
-
+        </div>
+        <div class="content"></div>
+    </div>
+</main>
 {% endblock contenu %}
