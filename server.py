@@ -18,6 +18,10 @@ def blindTestPage():
 def connectedPage():
     return render_template('connected.html')
 
+@app.route('/signup')
+def signupPage():
+    return render_template('signup.html')
+
 # @app.route('/test')
 # def hello():
 #     return render_template('test.html')

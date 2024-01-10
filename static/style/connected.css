@@ -1,0 +1,41 @@
+.playlists {
+    margin:15px 0px;
+}
+
+.playlist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .2s ease;
+    white-space: nowrap;
+    padding: 10px;
+    border-radius: var(--radius);
+}
+
+.playlist:hover {
+    background: rgb(255, 255, 255, 0.05);
+    border-radius: 5px;
+}
+
+
+.playlist > div {
+    width: 45px;
+    height: 45px;
+}
+
+.playlist > div > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.playlist a {
+    color: white;
+    text-decoration: none;
+    transition: .2s ease;
+    white-space: nowrap;
+}
+
+.playlist .material-icons {
+    color: var(--musyc);
+    font-size: 0.8rem;
+}
