@@ -69,6 +69,11 @@ input {
     background-color: var(--light);
 } 
 
+.input-log a {
+    color: var(--musyc2);
+    text-decoration: none;
+}
+
 .button-signup {
     margin: 0 auto;
     position: relative;
