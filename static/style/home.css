@@ -1,0 +1,115 @@
+
+.creation {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    border-radius: var(--radius);
+    transition: .2s ease;
+    background-color: var(--grey2);
+}
+
+.create-playlist a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--grey2);
+    background-color: white;
+    border-radius: 15px;
+    padding: 5px;
+
+}
+
+.create-playlist:hover {
+    transform: scale(1.05);
+}
+
+/* end side */
+
+/* content */
+
+.slogan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 45px;
+    height: 30%;
+    gap: 10px;
+    padding: 20px;
+}
+
+.slogan-and {
+    color: var(--musyc);
+}
+
+
+
+
+
+
+.Trend-title {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--light);
+    padding: var(--padd);
+}
+
+.Trend-title:hover {
+    color: var(--musyc2);
+    cursor: default;
+}
+
+.playlist-trend {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 50px;
+        flex-direction: column;
+        background-color: var(--grey);
+        border-radius: var(--radius);
+        padding: var(--padd);  
+        gap: 5px;
+}
+
+.trend-1 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--grey);
+    padding: var(--padd);  
+    gap: 10px;
+
+}
+
+.trend-1:hover {
+    background-color: var(--back);
+}
+
+.trend-1 img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.trend-1 .title-playlist {
+    text-align: left;
+    align-self: flex-start;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.trend-1 .comment-playlist {
+
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: var(--light);
+}

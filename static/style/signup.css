@@ -16,7 +16,7 @@ header {
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    width: 50%;
+    width: 60%;
     min-height: 80vh;
     border-radius: var(--radius);
     
@@ -93,4 +93,54 @@ input {
   
 .button-signup:hover {
     opacity: 1;
+}
+
+@media screen and (max-width: 767px) {
+    .content-signup {
+        background-color: var(--grey);
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 80vh;
+        border-radius: var(--radius);
+    }
+
+    .title-signup {
+        display: flex;
+        margin: 0 auto;
+        margin-top: 5%;
+        font-weight: normal;
+        font-size: 35px;
+    }
+
+    .text-signup {
+        display: flex;
+        margin: 0 auto;
+        font-weight: normal;
+        margin-top: 2%;
+        font-size: 15px;
+        margin-bottom: 10%;
+    }
+
+    label {
+        font-size: 8px;
+    }
+
+    
+   
+}
+
+@media screen and (max-width: 1439px) and (min-width: 767px) {
+    .content-signup {
+        background-color: var(--grey);
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 80vh;
+        border-radius: var(--radius);
+        
+    }
+
 }

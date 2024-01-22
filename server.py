@@ -22,6 +22,10 @@ def connectedPage():
 def signupPage():
     return render_template('signup.html')
 
+@app.route('/login')
+def loginPage():
+    return render_template('login.html')
+
 # @app.route('/test')
 # def hello():
 #     return render_template('test.html')
