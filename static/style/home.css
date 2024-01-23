@@ -44,15 +44,34 @@
 }
 
 
+/* Media Queries Tel*/
+
+@media screen and (max-width: 768px) {
+
+    /* content */
+
+    .slogan {
+        font-size: 4vw;
+        border-bottom: 1px solid var(--light);
+    }
+
+    .playlist-trend {
+        grid-template-columns: 1fr;
+    }
+}
 
 
 
 /* Media Queries Tablet */
 
+
 @media screen and (max-width: 1400px) {
+
+    /* content */
 
     .slogan {
         height: 15%;
+        font-size: 2.5vw;
     }
 
     .playlist-trend {

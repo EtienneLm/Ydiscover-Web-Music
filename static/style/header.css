@@ -64,3 +64,28 @@ nav a:hover {
 }
 
 /* fin header */
+
+
+/* Media Queries Tel */
+
+@media screen and (max-width: 767px) {
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+        border-radius: 0;
+        border-bottom: 1px solid var(--light);
+    }
+
+    nav {
+       display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+}

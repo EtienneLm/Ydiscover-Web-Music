@@ -91,6 +91,10 @@ body {
     margin-bottom: 15px;
 }
 
+.tel-icons {
+    display: none;
+}
+
 .listing-header {
     display: flex;
     align-items: center;
@@ -245,4 +249,77 @@ body {
     font-size: 16px;
     margin-bottom: 4px;
     color: var(--light);
+}
+
+
+/* Media Queries Tel */
+
+@media screen and (max-width: 767px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .view {
+        display: grid;
+        gap: 0px;
+    }
+
+    /* Side menu */
+
+    .side {
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 0vh;
+    }
+
+    .menu {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        border-radius: 0;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 10px;
+        opacity: 0.9;
+        border-top:1px solid var(--light);
+    }
+
+    .menu .mBot15 {
+        margin-bottom: 0;
+    }
+
+    .menu .text-m {
+        display: none;
+    }
+
+    .menu .tel-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .listing {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+
+    /* content */
+
+
 }

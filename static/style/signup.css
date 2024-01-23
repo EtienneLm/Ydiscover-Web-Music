@@ -100,10 +100,12 @@ input {
         background-color: var(--grey);
         display: flex;
         flex-direction: column;
-        margin: 0 auto;
+        margin: auto;
         width: 100%;
-        min-height: 80vh;
+        min-height: 100vh;
         border-radius: var(--radius);
+        padding-top: 5%;
+
     }
 
     .title-signup {
@@ -121,10 +123,12 @@ input {
         margin-top: 2%;
         font-size: 15px;
         margin-bottom: 10%;
+        padding-bottom: 10%;
+
     }
 
     label {
-        font-size: 8px;
+        font-size: 10px;
     }
 
     
