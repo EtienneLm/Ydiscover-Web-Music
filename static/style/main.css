@@ -53,6 +53,7 @@ body {
     background: var(--grey);
     padding: var(--padd);
     border-radius: var(--radius);
+    min-height: 80vh;
 }
 
 .footer {
