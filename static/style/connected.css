@@ -39,3 +39,17 @@
     color: var(--musyc);
     font-size: 0.8rem;
 }
+
+.trend-2 img {
+    margin: auto;
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+@media screen and (max-width: 1400px) {
+
+    .playlist-trend {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
