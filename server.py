@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template('home.html')
+    return redirect('/login')
 
 @app.route('/home')
 def home():
