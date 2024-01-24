@@ -2,7 +2,7 @@
 {% block contenu %}
 
 <div class="createClass">
-    <form class="connectionForm" >
+    <form class="connectionForm" method="post">
         <label for="username">Email :</label>
         <input type="text" id="username" name="username" required>
         
@@ -10,7 +10,7 @@
         <input type="password" id="password" name="password" required>
         
         <label for="password">Confirm Password :</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password_confirm" required>
 
         <button type="submit">Create new account</button>
         

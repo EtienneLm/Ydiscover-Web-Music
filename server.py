@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request, redirect, make_response
 
 app = Flask(__name__)
 
@@ -18,8 +18,13 @@ def blindTestPage():
 def connectAccPage():
     return render_template('connect.html')
 
-@app.route('/createAcc')
+@app.route('/createAcc', methods=["GET", "POST"])
 def createAccPage():
+    if request.method == "POST":
+        username = request.form["username"]
+        password = request.form["password"]
+        password_confirm = request.form["password_confirm"]
+
     return render_template('createAcc.html')
     
 
