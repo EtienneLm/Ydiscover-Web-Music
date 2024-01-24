@@ -20,5 +20,3 @@ def insertData(email, password):
     con.close()
 
 
-# insertData("test@gmail.com", "Azerty0!")
-print(getData("""SELECT * FROM User"""))

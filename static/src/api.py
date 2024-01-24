@@ -14,7 +14,6 @@ def getToken():
 
 def getTracks(token, genres, limit=1):
     spotifyPath = "https://api.spotify.com/v1/search"
-    # target_danceability=0.9
 
     request = f'{spotifyPath}?q=genre%3A{genres}&type=track&limit={limit}'
 
