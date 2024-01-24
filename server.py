@@ -21,6 +21,7 @@ def connectAccPage():
 @app.route('/createAcc')
 def createAccPage():
     return render_template('createAcc.html')
+    
 
 @app.route('/connected')
 def connectedPage():

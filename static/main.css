@@ -283,7 +283,7 @@ nav a:hover {
 }
 
 
-/* CONNECTION PAGE*/
+/* CONNECTION and CREATEACC PAGES*/
 .connectionForm {
     background-color: #B453DE;
     padding: 20px; 
@@ -327,7 +327,8 @@ button {
     justify-content: center; 
     margin-top: 8%;
 }
- 
+/* END OF CONNECTION and CREATEACC PAGES*/
+
     
 .creation {
     display: flex;
