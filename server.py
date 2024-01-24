@@ -12,9 +12,11 @@ def hello():
 @app.route('/home')
 def home():
     token = request.cookies.get('token')
-    urls = getTracks(token, "rock", 6)
-    embeds = getAllEmbebs(urls)
-    return render_template('home.html', embeds=embeds)
+    urls = getTracks(token, "rock", 3)
+    embeds1 = getAllEmbebs(urls)
+    urls = getTracks(token, "pop", 3)
+    embeds2 = getAllEmbebs(urls)
+    return render_template('home.html', embeds1=embeds1, embeds2=embeds2)
 
 @app.route('/blindTest')
 def blindTestPage():
@@ -54,7 +56,7 @@ def createAccPage():
 
 @app.route('/connected')
 def connectedPage():
-    return render_template('connected.html')
+    return redirect('/home')
 
 @app.route('/signup')
 def signupPage():
