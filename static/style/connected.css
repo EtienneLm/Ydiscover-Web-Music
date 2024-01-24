@@ -12,10 +12,7 @@
     border-radius: var(--radius);
 }
 
-.playlist:hover {
-    background: rgb(255, 255, 255, 0.05);
-    border-radius: 5px;
-}
+
 
 
 .playlist > div {
@@ -63,4 +60,13 @@
     .playlist-trend {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .playlist:hover {
+        background: rgb(255, 255, 255, 0.05);
+        border-radius: 5px;
+    }
+    
 }

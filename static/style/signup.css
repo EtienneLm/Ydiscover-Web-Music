@@ -91,9 +91,7 @@ input {
     opacity: 0.8;
   }
   
-.button-signup:hover {
-    opacity: 1;
-}
+
 
 @media screen and (max-width: 767px) {
     .content-signup {
@@ -147,4 +145,12 @@ input {
         
     }
 
+}
+
+@media screen and (min-width: 1440px) {
+
+    .button-signup:hover {
+        opacity: 1;
+    }
+    
 }

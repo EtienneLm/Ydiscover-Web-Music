@@ -78,9 +78,7 @@ body {
     transition: .2s ease;
 }
 
-.text-box a:hover {
-    color: var(--musyc);
-}
+
 
 .text-m {
     font-size: 0.85rem;
@@ -119,10 +117,7 @@ body {
     cursor: pointer;
 }
 
-.icons-action span:hover {
-    background: rgb(255, 255, 255, 0.1);
-    color: var(--musyc);
-}
+
 
 .filters {
     display: flex;
@@ -145,10 +140,7 @@ body {
     color: var(--light);
 }
 
-.filter-icons:hover {
-    background: rgb(255, 255, 255, 0.1);
-    color: var(--musyc);
-}
+
 
 .drop {
     display: flex;
@@ -196,10 +188,7 @@ body {
     padding: var(--padd);
 }
 
-.Trend-title:hover {
-    color: var(--musyc2);
-    cursor: default;
-}
+
 
 .playlist-trend {
         display: grid;
@@ -226,9 +215,7 @@ body {
 
 }
 
-.trend-1:hover, .trend-2:hover {
-    background-color: var(--back);
-}
+
 
 .trend-1 img {
     margin: auto;
@@ -322,5 +309,34 @@ body {
 
     /* content */
 
+
+}
+
+/* Media Queries Desktop */
+
+@media screen and (min-width: 1440px) {
+
+    .text-box a:hover {
+        color: var(--musyc);
+    }
+
+    .icons-action span:hover {
+        background: rgb(255, 255, 255, 0.1);
+        color: var(--musyc);
+    }
+
+    .filter-icons:hover {
+        background: rgb(255, 255, 255, 0.1);
+        color: var(--musyc);
+    }
+
+    .Trend-title:hover {
+        color: var(--musyc2);
+        cursor: default;
+    }
+
+    .trend-1:hover, .trend-2:hover {
+        background-color: var(--back);
+    }
 
 }

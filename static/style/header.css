@@ -22,9 +22,7 @@ nav a {
     font-size: 20px;
 }
 
-nav a:hover {
-    color: var(--musyc);
-}
+
 
 .user-options {
     display: flex;
@@ -59,9 +57,7 @@ nav a:hover {
     transition: .2s ease;
 }
 
-.login a:hover, .signup a:hover {
-    background-color: var(--musyc2);
-}
+
 
 /* fin header */
 
@@ -89,3 +85,15 @@ nav a:hover {
     }
 
 }
+
+@media screen and (min-width: 1440px) {
+
+    nav a:hover {
+        color: var(--musyc);
+    }
+    
+    .login a:hover, .signup a:hover {
+        background-color: var(--musyc2);
+    }
+}
+

@@ -20,9 +20,7 @@
 
 }
 
-.create-playlist:hover {
-    transform: scale(1.05);
-}
+
 
 /* end side */
 
@@ -77,4 +75,12 @@
     .playlist-trend {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .create-playlist:hover {
+        transform: scale(1.05);
+    }
+    
 }
