@@ -1,0 +1,200 @@
+{% extends 'header.html' %}
+{% block contenu %}
+
+<main>
+    <div class="view">
+        <div class="side">
+            <div class="menu">
+                <div class="text-box mBot15">
+                    <a href="/home">
+                        <span class="material-icons">home</span>
+                        <span class="text-m button-menu">Home</span>
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="#">
+                        <span class="material-icons">search</span>
+                        <span class="text-m button-menu">Search</span>
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="/blindTest">
+                        <span class="material-icons tel-icons">music_note</span>
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="#">
+                        <span class="material-icons tel-icons">library_add</span>
+                    </a>
+                </div>
+            </div>
+            <div class="listing">
+                <div class="listing-header">
+                    <div class="text-box">
+                        <a href="library.html">
+                            <span class="material-icons">library_add</span>
+                            <span class="text-m">Library</span>
+                        </a>
+                    </div>
+                    <div class="icons-action">
+                        <span class="material-icons">add</span>
+                        <span class="material-icons">arrow_forward</span>
+                    </div>
+                </div>
+                <div class="filters">
+                    <span class="material-icons filter-icons">search</span>
+                    <div class="drop">
+                        <span class="label">Recents</span>
+                        <span class="material-icons">expand_more</span>
+                    </div>
+                </div>
+                <div class="playlists">
+                    <div>
+                        <div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="material-icons">push_pin</span>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="text-box mBot15">
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                </div>
+                <div class="text-box mBot15">
+                    <a href="#">
+                        <span class="text-m">About</span>
+                    </a>
+                    <a href="#">
+                        <span class="text-m">Privacy</span>
+                    </a>
+                    <a href="#">
+                        <span class="text-m">Terms</span>
+                    </a>
+                </div>
+                <div class="text-box mBot15">
+                    <span class="text-m">©Web Mus Yc</span>
+                </div> 
+            </div>
+        </div>
+        <div class="content">
+            <div class="slogan">
+                Mix your playlist <span class="slogan-and"> and </span> create the best one!
+            </div>
+            <h3 class="Trend-title">Recent Songs</h3>
+            <div class="playlist-trend">
+                {% for track in embeds1 %}
+                <div class="trend-1">
+                    <iframe class="spotify" src="{{track}}" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading= "lazy"></iframe>
+                </div>
+                {% endfor %}
+                {% for track in embeds2 %}
+                <div class="trend-1">
+                    <iframe class="spotify" src="{{track}}" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading= "lazy"></iframe>
+                </div>
+                {% endfor %}
+            </div>                
+        </div>
+    </div>
+</main>
+{% endblock contenu %}

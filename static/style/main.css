@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --grey: #121212;
+    --back: #232323;
+    --light: #B8B8B8;
+    --musyc: #22C29A;
+    --musyc2: #B453DE;
+    --grey2: #252525;
+    --padd: 10px 20px;
+    --radius:10px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+
+.view {
+    display: flex;
+    gap: 10px;
+}
+
+.side {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 30%;
+    min-height: 100vh;
+}
+
+.content {
+    width: 70%;
+    min-height: 100vh;
+    background: var(--grey);
+    border-radius: var(--radius);
+}
+
+.menu {
+    background: var(--grey);
+    padding: var(--padd);
+    border-radius: var(--radius);
+}
+
+.listing{
+    background: var(--grey);
+    padding: var(--padd);
+    border-radius: var(--radius);
+    min-height: 80vh;
+}
+
+.footer {
+    background: var(--grey);
+    padding: var(--padd);
+    border-radius: var(--radius);
+}
+
+.text-box {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--light);
+}
+
+.text-box a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: var(--light);
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+
+
+.text-m {
+    font-size: 0.85rem;
+    font-weight: 600;
+
+}
+
+.mBot15 {
+    margin-bottom: 15px;
+}
+
+.tel-icons {
+    display: none;
+}
+
+.listing-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.listing-header .material-icons {
+    color: var(--light);
+}
+
+.icons-action span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+    background: rgb(255, 255, 255, 0);
+    transition: .2s ease;
+    cursor: pointer;
+}
+
+
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.filter-icons {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 1rem;
+    background: rgb(255, 255, 255, 0);
+    transition: .2s ease;
+    cursor: pointer;
+    color: var(--light);
+}
+
+
+
+.drop {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.drop .label {
+    font-size: 0.75rem;
+    color: var(--light);
+}
+
+.drop .material-icons {
+    color: var(--light);
+    font-size: 1.3rem;
+}
+
+
+.artist {
+    color: var(--light);
+    font-size: 0.75rem;
+}
+
+.listing {
+    width: 100%;
+    height: 60%;
+    overflow-y: scroll;
+    scrollbar-color: var(--back);
+}
+
+.listing::-webkit-scrollbar {
+    width: 10px;
+    background: var(--back);
+    border-radius: 10px;
+}
+
+.Trend-title {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--light);
+    padding: var(--padd);
+}
+
+
+
+.playlist-trend {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 auto;
+        margin-top: 50px;
+        flex-direction: column;
+        background-color: var(--grey);
+        border-radius: var(--radius);
+        padding: var(--padd);  
+        gap: 10px;
+}
+
+.trend-1, .trend-2 {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: var(--grey);
+    padding: var(--padd);  
+    gap: 10px;
+
+}
+
+
+
+.trend-1 img {
+    margin: auto;
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
+
+.trend-1, .trend-2 .title-playlist {
+    text-align: left;
+    align-self: flex-start;
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: var(--light);
+}
+
+.trend-1, .trend-2 .comment-playlist {
+
+    font-size: 16px;
+    margin-bottom: 4px;
+    color: var(--light);
+}
+
+
+/* Media Queries Tel */
+
+@media screen and (max-width: 767px) {
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .view {
+        display: grid;
+        gap: 0px;
+    }
+
+    /* Side menu */
+
+    .side {
+
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        min-height: 0vh;
+    }
+
+    .menu {
+        display: flex;
+        position: fixed;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        border-radius: 0;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 10px;
+        opacity: 0.9;
+        border-top:1px solid var(--light);
+    }
+
+    .menu .mBot15 {
+        margin-bottom: 0;
+    }
+
+    .menu .text-m {
+        display: none;
+    }
+
+    .menu .tel-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .listing {
+        display: none;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .content {
+        width: 100%;
+        min-height: 100vh;
+        border-radius: 0;
+    }
+
+    /* content */
+
+
+}
+
+/* Media Queries Desktop */
+
+@media screen and (min-width: 1440px) {
+
+    .text-box a:hover {
+        color: var(--musyc);
+    }
+
+    .icons-action span:hover {
+        background: rgb(255, 255, 255, 0.1);
+        color: var(--musyc);
+    }
+
+    .filter-icons:hover {
+        background: rgb(255, 255, 255, 0.1);
+        color: var(--musyc);
+    }
+
+    .Trend-title:hover {
+        color: var(--musyc2);
+        cursor: default;
+    }
+
+    .trend-1:hover, .trend-2:hover {
+        background-color: var(--back);
+    }
+
+}
