@@ -1,24 +1,49 @@
-{% extends 'header.html' %}
-{% block contenu %}
-
-<main>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/style/main.css" type="text/css">
+    <link rel="stylesheet" href="../static/style/header.css" type="text/css">
+    <link rel="stylesheet" href="../static/style/connected.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="../static/images/WebMusYc.png">
+    <title>Web Mus Yc</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="/connected"> <img src="../static/images/WebMusYc.png" alt="logo"></a>
+        </div>
+        <nav>
+            <a href="#">Blindtest</a>
+        </nav>
+        <div class="user-options">
+            <div class="signup">
+                <a href="#">My account</a>
+            </div>
+        </div>
+    </header>
+<!-- fin header -->
+    <main>
     <div class="view">
         <div class="side">
             <div class="menu">
                 <div class="text-box mBot15">
                     <a href="/home">
                         <span class="material-icons">home</span>
-                        <span class="text-m button-menu">Home</span>
+                        <span class="text-m">Home</span>
+                    </a>
+                </div>
+                <div class="text-box">
+                    <a href="/search">
+                        <span class="material-icons">search</span>
+                        <span class="text-m">Search</span>
                     </a>
                 </div>
                 <div class="text-box">
                     <a href="#">
-                        <span class="material-icons">search</span>
-                        <span class="text-m button-menu">Search</span>
-                    </a>
-                </div>
-                <div class="text-box">
-                    <a href="/blindTest">
                         <span class="material-icons tel-icons">music_note</span>
                     </a>
                 </div>
@@ -32,7 +57,7 @@
                 <div class="listing-header">
                     <div class="text-box">
                         <a href="library.html">
-                            <span class="material-icons">library_add</span>
+                            <span class="material-icons">library_music</span>
                             <span class="text-m">Library</span>
                         </a>
                     </div>
@@ -178,23 +203,62 @@
             </div>
         </div>
         <div class="content">
-            <div class="slogan">
-                Mix your playlist <span class="slogan-and"> and </span> create the best one!
-            </div>
-            <h3 class="Trend-title">Recent Songs</h3>
+            <h3 class="Trend-title">Latest playlist</h3>
             <div class="playlist-trend">
-                {% for track in embeds1 %}
                 <div class="trend-1">
-                    <iframe class="spotify" src="{{track}}" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading= "lazy"></iframe>
+                        <img src="../static/images/Playlist-Trend-1.png" alt="">
+                    <div>
+                        <span class="title-playlist">Rise</span>
+                        <br>
+                        <span class="comment-playlist">Playlist chill</span>
+                    </div>
                 </div>
-                {% endfor %}
-                {% for track in embeds2 %}
                 <div class="trend-1">
-                    <iframe class="spotify" src="{{track}}" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading= "lazy"></iframe>
+                        <img src="../static/images/Playlist-Trend-1.png" alt="">
+                    <div>
+                        <span class="title-playlist">Deep Focus</span>
+                        <br>
+                        <span class="comment-playlist">Keep calm and focus.</span>
+                    </div>
                 </div>
-                {% endfor %}
-            </div>                
+                <div class="trend-1">
+                        <img src="../static/images/Playlist-Trend-1.png" alt="">
+                    <div>
+                        <span class="title-playlist">Rise</span>
+                        <br>
+                        <span class="comment-playlist">Playlist for the night</span>
+                    </div>
+                </div>
+            </div>
+            <h3 class="Trend-title">Latest songs</h3>
+            <div class="playlist-trend">
+                <div class="trend-2">
+                        <img src="../static/images/liked.png" alt="">
+                    <div>
+                        <span class="title-playlist">Singer</span>
+                        <br>
+                        <span class="comment-playlist">Title</span>
+                    </div>
+                </div>
+                <div class="trend-2">
+                        <img src="../static/images/liked.png" alt="">
+                    <div>
+                        <span class="title-playlist">Singer</span>
+                        <br>
+                        <span class="comment-playlist">Title</span>
+                    </div>
+                </div>
+                <div class="trend-2">
+                        <img src="../static/images/liked.png" alt="">
+                    <div>
+                        <span class="title-playlist">Singer</span>
+                        <br>
+                        <span class="comment-playlist">Title</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-</main>
-{% endblock contenu %}
+    </main>
+</body>
+</html>

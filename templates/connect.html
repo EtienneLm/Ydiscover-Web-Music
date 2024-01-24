@@ -1,0 +1,17 @@
+{% extends 'header.html' %}
+{% block contenu %}
+
+<div class="connectClass">
+    <form class="connectionForm" method="post">
+        <label for="username">Email :</label>
+        <input type="text" id="username" name="email" required>
+        
+        <label for="password">Password :</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="submit">Connect</button>
+        <a href="/createAcc"><i class="creatAccTxt"><small>you don't have an account ?</small></i></a>
+    </form>
+</div>
+
+{% endblock contenu %}

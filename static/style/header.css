@@ -1,0 +1,99 @@
+/* debut header */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--grey);
+    border-radius: var(--radius);
+    padding: var(--padd);  
+    margin-bottom: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+nav a {
+    color: var(--light);
+    text-decoration: none;
+    transition: .2s ease;
+    font-size: 20px;
+}
+
+
+
+.user-options {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-options a {
+    gap: 10px;
+}
+
+.logo img {
+    max-height: 130px;
+    max-width: 130px;
+}
+
+.login a {
+    border: white 1px solid;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.signup a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: white 1px solid;
+    color: white;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+
+
+/* fin header */
+
+
+/* Media Queries Tel */
+
+@media screen and (max-width: 767px) {
+
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 0;
+        border-radius: 0;
+        border-bottom: 1px solid var(--light);
+    }
+
+    nav {
+       display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    nav a:hover {
+        color: var(--musyc);
+    }
+    
+    .login a:hover, .signup a:hover {
+        background-color: var(--musyc2);
+    }
+}
+
