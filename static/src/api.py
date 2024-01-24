@@ -12,13 +12,13 @@ def getToken():
     if res.status_code == 200:
         return res.json().get('access_token')
 
-def getPlaylist(self, genres, limit=1):
+def getTracks(token, genres, limit=1):
     spotifyPath = "https://api.spotify.com/v1/search"
     # target_danceability=0.9
 
     request = f'{spotifyPath}?q=genre%3A{genres}&type=track&limit={limit}'
 
-    res = req.get(request, headers={"Content-Type":"application/json", "Authorization":f"Bearer {self.accessToken}"})
+    res = req.get(request, headers={"Content-Type":"application/json", "Authorization":f"Bearer {token}"})
 
     data = json.loads(res.text)
     allTracks = []
@@ -26,13 +26,13 @@ def getPlaylist(self, genres, limit=1):
         allTracks.append(track['external_urls']['spotify'])
     return allTracks
 
-def getAllEmbebs(self, urls):
+def getAllEmbebs( urls):
     embedUrls = []
     for url in urls:
-        embedUrls.append(self.getEmbeb(url))
+        embedUrls.append(getEmbeb(url))
     return embedUrls
         
-def getEmbeb(self, url):
+def getEmbeb( url):
     splitedUrl = url.split("/")
     embedUrl = ""
     for id, val in enumerate(splitedUrl):

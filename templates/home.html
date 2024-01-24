@@ -90,38 +90,11 @@
             </div>
             <h3 class="Trend-title">Playlists tendances</h3>
             <div class="playlist-trend">
+                {% for track in embeds %}
                 <div class="trend-1">
-                        <img src="../static/images/Playlist-Trend-1.png" alt="">
-                    <div>
-                        <span class="title-playlist">Rise</span>
-                        <br>
-                        <span class="comment-playlist">Playlist chill</span>
-                    </div>
+                    <iframe class="spotify" src="{{track}}" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading= "lazy"></iframe>
                 </div>
-                <div class="trend-1">
-                        <img src="../static/images/Playlist-Trend-1.png" alt="">
-                    <div>
-                        <span class="title-playlist">Deep Focus</span>
-                        <br>
-                        <span class="comment-playlist">Keep calm and focus.</span>
-                    </div>
-                </div>
-                <div class="trend-1">
-                        <img src="../static/images/Playlist-Trend-1.png" alt="">
-                    <div>
-                        <span class="title-playlist">Rise</span>
-                        <br>
-                        <span class="comment-playlist">Playlist for the night</span>
-                    </div>
-                </div>
-                <div class="trend-1">
-                        <img src="../static/images/Playlist-Trend-1.png" alt="">
-                    <div>
-                        <span class="title-playlist">Rise</span>
-                        <br>
-                        <span class="comment-playlist">Playlist ambiance</span>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
