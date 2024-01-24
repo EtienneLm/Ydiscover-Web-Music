@@ -1,4 +1,49 @@
 
+.playlists {
+    margin:15px 0px;
+}
+
+.playlist {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: .2s ease;
+    white-space: nowrap;
+    padding: 10px;
+    border-radius: var(--radius);
+}
+
+
+
+
+.playlist > div {
+    width: 45px;
+    height: 45px;
+}
+
+.playlist > div > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.playlist a {
+    color: white;
+    text-decoration: none;
+    transition: .2s ease;
+    white-space: nowrap;
+}
+
+.playlist .material-icons {
+    color: var(--musyc);
+    font-size: 0.8rem;
+}
+
+.trend-2 img {
+    margin: auto;
+    max-width: 80%;
+    border-radius: 10px;
+    margin-bottom: 8px;
+}
 .creation {
     display: flex;
     align-items: center;
@@ -70,7 +115,7 @@
 
 
 
-/* Media Queries Tablet */
+/* Media Queries */
 
 
 @media screen and (min-width:768px) and (max-width: 1400px) {
@@ -93,4 +138,20 @@
         transform: scale(1.05);
     }
     
+    .playlist:hover {
+        background: rgb(255, 255, 255, 0.05);
+        border-radius: 5px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    .content {
+        min-height: 0;
+    }
+
+    .playlist-trend {
+        grid-template-columns: 1fr;
+    }
 }

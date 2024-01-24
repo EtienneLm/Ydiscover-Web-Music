@@ -50,13 +50,106 @@
                 </div>
                 <div class="playlists">
                     <div>
-                        <div class="creation">
+                        <div class="playlist">
                             <div>
-                                <div  class="text-box mBot15">
-                                    <p>Log in to create your first playlist!</p>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="material-icons">push_pin</span>
+                                    <span class="artist">Playlist</span>
                                 </div>
-                                <div class="create-playlist">
-                                    <a href="/login">Create playlist</a>
+                            </div>
+                        </div>
+                        <div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
+                                </div>
+                            </div>
+                        </div><div class="playlist">
+                            <div>
+                                <img src="../static/images/liked.png" alt="">
+                            </div>
+                            <div class="playlist-meta">
+                                <a href="/">Liked Songs</a>
+                                <div>
+                                    <span class="artist">Playlist</span>
                                 </div>
                             </div>
                         </div>
@@ -88,9 +181,18 @@
             <div class="slogan">
                 Mix your playlist <span class="slogan-and"> and </span> create the best one!
             </div>
-            <h3 class="Trend-title">Playlists tendances</h3>
+            <h3 class="Trend-title">Recent Songs</h3>
             <div class="playlist-trend">
-                {% for track in embeds %}
+                {% for track in embeds1 %}
+                <div class="trend-1">
+                    <iframe class="spotify" src="{{track}}" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading= "lazy"></iframe>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+        <h3 class="Trend-title">Recommended Songs</h3>
+            <div class="playlist-trend">
+                {% for track in embeds2 %}
                 <div class="trend-1">
                     <iframe class="spotify" src="{{track}}" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading= "lazy"></iframe>
                 </div>
