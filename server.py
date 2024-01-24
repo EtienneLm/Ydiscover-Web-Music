@@ -21,8 +21,8 @@ def connectAccPage():
 @app.route('/createAcc', methods=["GET", "POST"])
 def createAccPage():
     if request.method == "POST":
-        username = request.form["username"]
-        password = request.form["password"]
+        username = request.form["username"]  
+        password = request.form["password"] # get the name="xxxx" from the html
         password_confirm = request.form["password_confirm"]
 
     return render_template('createAcc.html')
